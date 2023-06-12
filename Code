@@ -12,7 +12,7 @@ test <- subset(data, sample == FALSE)
 
 #Apply Random Over-Sample Examples (ROSE) for class balance on training set
 library(ROSE)
-train <- ROSE(MALE ~ ., data = train, N = 10000, seed = 123)$data
+train <- ROSE(MALE ~ ., data = train, N = 9649, seed = 123)$data
 
 #Define predictors
 library(dplyr)
